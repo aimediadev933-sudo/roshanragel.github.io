@@ -184,6 +184,62 @@
             color: #666;
         }
 
+        /* Student Cards */
+        .student-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .student-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .student-card:hover {
+            border-color: #1a73e8;
+        }
+
+        .student-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 12px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .student-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .student-card-name {
+            font-size: 15px;
+            font-weight: 500;
+            color: #222;
+            margin-bottom: 4px;
+            text-align: center;
+        }
+
+        .student-card-program {
+            font-size: 13px;
+            color: #1a73e8;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .student-card-topic {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            text-align: center;
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid #ddd;
@@ -224,6 +280,10 @@
             .research-list,
             .student-list {
                 columns: 1;
+            }
+
+            .student-cards {
+                grid-template-columns: 1fr;
             }
 
             .container {
@@ -352,28 +412,146 @@
         <section id="students">
             <h2>Graduate Students</h2>
             
-            <h3>PhD Candidates</h3>
-            <ul class="student-list">
-                <li><span class="student-name">Mathuranthagaa Selvaratnam</span><br><span class="student-details">Co-supervised with City, University of London</span></li>
-                <li><span class="student-name">Romiyal George</span><br><span class="student-details">Plant Diseases Detection</span></li>
-                <li><span class="student-name">M Santhanakrishnan</span><br><span class="student-details">Co-supervised with Charles Darwin University</span></li>
-                <li><span class="student-name">Kanagasabai Thiruthanigesan</span></li>
-                <li><span class="student-name">Roshan Pushpakumara</span></li>
-                <li><span class="student-name">S Nimishan</span></li>
-            </ul>
+            <h3>Postgraduate Students (PhD)</h3>
+            <div class="student-cards">
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/mathuranthagaa.jpg" alt="Mathuranthagaa Selvaratnam">
+                    </div>
+                    <div class="student-card-name">1. Mathuranthagaa Selvaratnam</div>
+                    <div class="student-card-program">PhD Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Muttukrishnan Rajarajan, City, University of London</div>
+                </div>
 
-            <h3>Masters Students</h3>
-            <ul class="student-list">
-                <li>Anjana Senanayake (MPhil)</li>
-                <li>Rukshani Puvanendran (MPhil)</li>
-                <li>Rasendram Muralitharan (MPhil)</li>
-                <li>Sandaruwan Herath (MPhil)</li>
-                <li>Warunika Hippola (MPhil)</li>
-                <li>Hasini Vindiya Athauda (MPhil)</li>
-                <li>H Hashan (MPhil)</li>
-                <li>Dinusha Premasiri (MPhil)</li>
-                <li>Charunika Dampalessa (MSc by Research)</li>
-            </ul>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/romiyal.jpg" alt="Romiyal George">
+                    </div>
+                    <div class="student-card-name">2. Romiyal George</div>
+                    <div class="student-card-program">PhD Candidate</div>
+                    <div class="student-card-topic">Plant Diseases Detection (co-supervised with Thuseethan Selvarajah, Charles Darwin University, Australia)</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/santhanakrishnan.jpg" alt="M Santhanakrishnan">
+                    </div>
+                    <div class="student-card-name">3. M Santhanakrishnan</div>
+                    <div class="student-card-program">PhD Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Thuseethan Selvarajah, Charles Darwin University, Australia and Siyamalan Manivannan, University of Jaffna</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/thiruthanigesan.jpg" alt="Kanagasabai Thiruthanigesan">
+                    </div>
+                    <div class="student-card-name">4. Kanagasabai Thiruthanigesan</div>
+                    <div class="student-card-program">PhD Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Ruwan Nawarathna, CS, UoP</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/pushpakumara.jpg" alt="Roshan Pushpakumara">
+                    </div>
+                    <div class="student-card-name">5. Roshan Pushpakumara</div>
+                    <div class="student-card-program">PhD Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Isuru Nawinne</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/nimishan.jpg" alt="S Nimishan">
+                    </div>
+                    <div class="student-card-name">6. S Nimishan</div>
+                    <div class="student-card-program">PhD Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Thuseethan Selvarajah, Charles Darwin University, Australia and S. Vasanthapriyan (SUSL)</div>
+                </div>
+            </div>
+
+            <h3>Postgraduate Students (Masters)</h3>
+            <div class="student-cards">
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/anjana.jpg" alt="Anjana Senanayake">
+                    </div>
+                    <div class="student-card-name">1. Anjana Senanayake</div>
+                    <div class="student-card-program">MPhil</div>
+                    <div class="student-card-topic">Co-supervised with Hasindu Gamaarachchi (UNSW, Sydney) and Damayanthi Herath (UoP)</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/rukshani.jpg" alt="Rukshani Puvanendran">
+                    </div>
+                    <div class="student-card-name">2. Rukshani Puvanendran</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Asanka P. Sayakkara (UCSC)</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/rasendram.jpg" alt="Rasendram Muralitharan">
+                    </div>
+                    <div class="student-card-name">3. Rasendram Muralitharan</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Upul Jayasinghe (UoP)</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/sandaruwan.jpg" alt="Sandaruwan Herath">
+                    </div>
+                    <div class="student-card-name">4. Sandaruwan Herath</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Prabhath Gunathilake</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/warunika.jpg" alt="Warunika Hippola">
+                    </div>
+                    <div class="student-card-name">5. Warunika Hippola</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Isuru Nawinne</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/hasini.jpg" alt="Hasini Vindiya Athauda">
+                    </div>
+                    <div class="student-card-name">6. Hasini Vindiya Athauda</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Upul Jayasinghe</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/hashan.jpg" alt="H Hashan">
+                    </div>
+                    <div class="student-card-name">7. H Hashan</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Asitha Bandaranayake (UoP)</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/dinusha.jpg" alt="Dinusha Premasiri">
+                    </div>
+                    <div class="student-card-name">8. Dinusha Premasiri</div>
+                    <div class="student-card-program">MPhil Candidate</div>
+                    <div class="student-card-topic">Co-supervised with Isuru Nawinne</div>
+                </div>
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <img src="students/charunika.jpg" alt="Charunika Dampalessa">
+                    </div>
+                    <div class="student-card-name">9. Charunika Dampalessa</div>
+                    <div class="student-card-program">MSc by Research Candidate</div>
+                    <div class="student-card-topic"></div>
+                </div>
+            </div>
 
             <p><strong>Available for Supervision:</strong> Yes (limited availability)</p>
         </section>
