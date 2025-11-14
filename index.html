@@ -447,6 +447,192 @@
             margin-top: 32px;
         }
 
+        /* Speaking Section */
+        .speaking-intro {
+            text-align: center;
+            margin-bottom: 48px;
+            padding: 32px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            border-radius: 12px;
+        }
+
+        .speaking-intro p {
+            font-size: 18px;
+            color: #5f6368;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .schedule-container {
+            margin: 48px 0;
+        }
+
+        .schedule-item {
+            background: #fff;
+            border: 2px solid #e8eaed;
+            border-left: 5px solid #1a73e8;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .schedule-item::before {
+            content: '📅';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 32px;
+            opacity: 0.3;
+        }
+
+        .schedule-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.15);
+            border-left-width: 8px;
+        }
+
+        .schedule-date {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a73e8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .schedule-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #202124;
+            margin-bottom: 8px;
+        }
+
+        .schedule-location {
+            font-size: 15px;
+            color: #5f6368;
+            margin-bottom: 4px;
+        }
+
+        .schedule-type {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .talk-topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .talk-card {
+            background: #fff;
+            border: 2px solid #e8eaed;
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .talk-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #1a73e8, #4285f4);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .talk-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(26, 115, 232, 0.15);
+            border-color: #1a73e8;
+        }
+
+        .talk-icon {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .talk-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #202124;
+            margin-bottom: 12px;
+        }
+
+        .talk-duration {
+            font-size: 13px;
+            color: #1a73e8;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .talk-description {
+            font-size: 15px;
+            color: #5f6368;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .talk-details {
+            font-size: 14px;
+            color: #5f6368;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e8eaed;
+        }
+
+        .booking-cta {
+            text-align: center;
+            margin-top: 48px;
+            padding: 40px;
+            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+            border-radius: 16px;
+            color: #fff;
+        }
+
+        .booking-cta h3 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .booking-cta p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #fff;
+            color: #1a73e8;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: #0d5bbd;
+        }
+
         .contact-card {
             background-color: #f8f9fa;
             padding: 32px;
@@ -788,6 +974,7 @@
             <li><a href="#awards">Awards</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#speaking">Speaking</a></li>
             <li><a href="#students">Students</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -882,6 +1069,133 @@
             </div>
 
             <p>For a complete list of over 200 publications, visit <a href="https://scholar.google.com" target="_blank">Google Scholar</a> or <a href="https://www.researchgate.net" target="_blank">ResearchGate</a></p>
+        </section>
+
+        <!-- Speaking Section -->
+        <section id="speaking">
+            <h2>Speaking Engagements</h2>
+            
+            <div class="speaking-intro">
+                <p>Prof. Ragel is available for keynote presentations, workshops, and academic talks on topics related to computer engineering, AI/ML, embedded systems, and higher education. With over 200 peer-reviewed publications and extensive industry experience, he brings cutting-edge insights to audiences worldwide.</p>
+            </div>
+
+            <h3>Upcoming Schedule</h3>
+            <div class="schedule-container">
+                <div class="schedule-item">
+                    <div class="schedule-date">March 15-17, 2025</div>
+                    <div class="schedule-title">IEEE International Conference on Computing</div>
+                    <div class="schedule-location">📍 Singapore</div>
+                    <span class="schedule-type">Keynote Speaker</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">April 22, 2025</div>
+                    <div class="schedule-title">AI in Education Summit</div>
+                    <div class="schedule-location">📍 Colombo, Sri Lanka</div>
+                    <span class="schedule-type">Panel Discussion</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">May 10, 2025</div>
+                    <div class="schedule-title">National Research Symposium</div>
+                    <div class="schedule-location">📍 University of Moratuwa</div>
+                    <span class="schedule-type">Workshop</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">June 5-8, 2025</div>
+                    <div class="schedule-title">Asia-Pacific Conference on Computer Science</div>
+                    <div class="schedule-location">📍 Bangkok, Thailand</div>
+                    <span class="schedule-type">Invited Talk</span>
+                </div>
+            </div>
+
+            <h3>Available Talk Topics</h3>
+            <div class="talk-topics">
+                <div class="talk-card">
+                    <div class="talk-icon">🤖</div>
+                    <div class="talk-title">Artificial Intelligence & Machine Learning in Real-World Applications</div>
+                    <div class="talk-duration">Duration: 45-60 minutes</div>
+                    <div class="talk-description">
+                        Explore the latest developments in AI/ML and their practical applications in industry. Covers deep learning, computer vision, and edge computing with real-world case studies.
+                    </div>
+                    <div class="talk-details">
+                        <strong>Format:</strong> Keynote, Workshop, or Master Class<br>
+                        <strong>Audience:</strong> Technical professionals, researchers, students
+                    </div>
+                </div>
+
+                <div class="talk-card">
+                    <div class="talk-icon">💻</div>
+                    <div class="talk-title">Embedded Systems & IoT: From Theory to Practice</div>
+                    <div class="talk-duration">Duration: 60-90 minutes</div>
+                    <div class="talk-description">
+                        Deep dive into modern embedded systems design, IoT architectures, and real-time computing. Includes hands-on demonstrations and industry best practices.
+                    </div>
+                    <div class="talk-details">
+                        <strong>Format:</strong> Technical presentation or workshop<br>
+                        <strong>Audience:</strong> Engineers, developers, academics
+                    </div>
+                </div>
+
+                <div class="talk-card">
+                    <div class="talk-icon">🔬</div>
+                    <div class="talk-title">Computational Biology & Bioinformatics</div>
+                    <div class="talk-duration">Duration: 50-75 minutes</div>
+                    <div class="talk-description">
+                        Hardware/software acceleration of bioinformatics algorithms, nanopore sequencing analysis, and genomic data processing on embedded systems.
+                    </div>
+                    <div class="talk-details">
+                        <strong>Format:</strong> Research presentation<br>
+                        <strong>Audience:</strong> Researchers, bioinformatics professionals
+                    </div>
+                </div>
+
+                <div class="talk-card">
+                    <div class="talk-icon">🔒</div>
+                    <div class="talk-title">Security in Computer Systems: Side-Channel Attacks & Countermeasures</div>
+                    <div class="talk-duration">Duration: 60 minutes</div>
+                    <div class="talk-description">
+                        Understanding security vulnerabilities at the micro-architectural level. Covers cache timing attacks, power analysis, and effective countermeasures.
+                    </div>
+                    <div class="talk-details">
+                        <strong>Format:</strong> Technical talk or seminar<br>
+                        <strong>Audience:</strong> Security professionals, researchers
+                    </div>
+                </div>
+
+                <div class="talk-card">
+                    <div class="talk-icon">🎓</div>
+                    <div class="talk-title">Innovation in Higher Education: Building Research Capacity</div>
+                    <div class="talk-duration">Duration: 45-60 minutes</div>
+                    <div class="talk-description">
+                        Strategies for developing research excellence in resource-constrained environments. Drawing from experience leading University of Peradeniya's CS program.
+                    </div>
+                    <div class="talk-details">
+                        <strong>Format:</strong> Keynote or panel discussion<br>
+                        <strong>Audience:</strong> Educators, administrators, policymakers
+                    </div>
+                </div>
+
+                <div class="talk-card">
+                    <div class="talk-icon">🌐</div>
+                    <div class="talk-title">Digital Infrastructure & National Research Networks</div>
+                    <div class="talk-duration">Duration: 50 minutes</div>
+                    <div class="talk-description">
+                        Insights from leading LEARN and the Asi@Connect project. Discusses building and maintaining national research and education networks.
+                    </div>
+                    <div class="talk-details">
+                        <strong>Format:</strong> Strategic presentation<br>
+                        <strong>Audience:</strong> Policymakers, network administrators
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-cta">
+                <h3>Book Prof. Ragel for Your Event</h3>
+                <p>Interested in having Prof. Roshan G. Ragel speak at your conference, workshop, or institutional event? Contact us for availability and speaking arrangements.</p>
+                <a href="#contact" class="cta-button">Request Speaking Engagement</a>
+            </div>
         </section>
 
         <!-- Students -->
